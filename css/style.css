@@ -1,0 +1,80 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  font-family: "Gilroy", sans-serif;
+  background-color: #222;
+}
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Стиль контейнера переключателя */
+.toggle-switch {
+  display: inline-flex;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  height: 50px;
+}
+
+.toggle-switch input[type="radio"] {
+  display: none;
+}
+
+.toggle-switch label {
+  width: 50%;
+  text-align: center;
+  line-height: 50px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Белая кнопка по умолчанию */
+.white {
+  background-color: transparent;
+  color: white;
+  border-radius: 25px 25px 25px 25px;
+}
+
+/* Черная кнопка по умолчанию */
+.black {
+  background-color: transparent;
+  color: white;
+  border-radius: 25px 25px 25px 25px;
+}
+
+/* Когда выбрана белая кнопка */
+input[type="radio"]#white:checked + label.white {
+  background-color: white;
+  color: black;
+}
+
+/* Когда выбрана черная кнопка */
+input[type="radio"]#black:checked + label.black {
+  background-color: white;
+  color: black;
+}
+
+/* Когда выбрана черная кнопка - Белая становится черной */
+input[type="radio"]#black:checked ~ label.white {
+  background-color: transparent; /* Белая кнопка становится черной */
+  color: white; /* Текст становится белым */
+}
+
+/* Когда выбрана белая кнопка - Черная остается прежней */
+input[type="radio"]#white:checked ~ label.black {
+  background-color: transparent;
+  color: white;
+}
