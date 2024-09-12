@@ -4,17 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio_15-Scooter</title>
+    <link
+      rel="stylesheet"
+      href="https://gistcdn.githack.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- переключатель-начало -->
-    <div class="toggle-switch">
-      <input type="radio" id="white" name="theme" checked />
-      <label for="white" class="white">Белый</label>
+    <header class="header">
+      <div class="container">
+        <div class="navigation__flex">
+          <div class="logo-nav__flex">
+            <img class="logo" src="img/nav/logo.svg" alt="logo" />
+            <ul class="ul__flex">
+              <li><a href="#">О продукте</a></li>
+              <li><a href="#">Внешний вид</a></li>
+              <li><a href="#">Безопасность</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+          <button class="buy-button">Купить</button>
+        </div>
+        <h1 class="h1__header">
+          Стильный электросамокат с мощным аккумулятором
+        </h1>
+        <h2 class="h2__header">
+          Улучшенная производительность для дальних путешествий.
+        </h2>
+        <h2 class="h2__header h2-two">
+          Работает так же просто, как и выглядит.
+        </h2>
+        <!-- переключатель-начало -->
+        <div class="toggle-switch">
+          <input type="radio" id="white" name="theme" checked />
+          <label for="white" class="white">Белый</label>
 
-      <input type="radio" id="black" name="theme" />
-      <label for="black" class="black">Черный</label>
-    </div>
-    <!-- переключатель-конец -->
+          <input type="radio" id="black" name="theme" />
+          <label for="black" class="black">Черный</label>
+        </div>
+        <!-- переключатель-конец -->
+      </div>
+    </header>
+    <!-- section -->
+    <section class="sectionBattery">
+      <div class="container">
+        <h2 class="h2__section">
+          Мощная батарея и экономичный расход заряда позволяют преодолевать
+          расстояния до 45 км
+        </h2>
+      </div>
+    </section>
   </body>
 </html>

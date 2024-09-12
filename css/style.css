@@ -16,22 +16,104 @@ body {
   width: 100%;
   margin: 0 auto;
 }
+.header {
+  background-image: url(/img/nav/bike.png);
+  background-position: 290px -444px;
+  background-repeat: no-repeat;
 
-/* Стиль контейнера переключателя */
+  height: 880px;
+}
+.navigation__flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  margin-bottom: 126px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.logo-nav__flex {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 80px;
+}
+.ul__flex {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 39px;
+}
+.logo-nav__flex li,
+.logo-nav__flex a {
+  text-decoration: none;
+  color: rgb(241, 241, 241);
+  list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: -1%;
+}
+.logo {
+  width: 60px;
+  height: 39px;
+  cursor: pointer;
+}
+.h1__header {
+  font-family: Gilroy;
+  font-size: 80px;
+  font-weight: 600;
+  line-height: 100%; /* 80px */
+  width: 1030px;
+  color: #f1f1f1;
+  margin: 0;
+  margin-bottom: 30px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.h2__header {
+  font-family: Gilroy;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 120%;
+  width: 520px;
+  color: rgb(255, 76, 13);
+  margin: 0;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.h2-two {
+  width: 350px;
+  margin-bottom: 60px;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+.buy-button {
+  width: 122px;
+  height: 54px;
+  border-radius: 65px;
+  background-color: rgb(241, 241, 241);
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Стиль переключателя */
 .toggle-switch {
   display: inline-flex;
   border: 2px solid #fff;
   border-radius: 25px;
   overflow: hidden;
   position: relative;
-  width: 200px;
-  height: 50px;
+  width: 247px;
+  height: 53px;
+  margin-left: 120px;
+  margin-right: 120px;
 }
-
 .toggle-switch input[type="radio"] {
   display: none;
 }
-
 .toggle-switch label {
   width: 50%;
   text-align: center;
@@ -40,33 +122,29 @@ body {
   font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 /* Белая кнопка по умолчанию */
 .white {
   background-color: transparent;
   color: white;
   border-radius: 25px 25px 25px 25px;
+  font-size: 16px;
 }
-
 /* Черная кнопка по умолчанию */
 .black {
   background-color: transparent;
   color: white;
   border-radius: 25px 25px 25px 25px;
 }
-
 /* Когда выбрана белая кнопка */
 input[type="radio"]#white:checked + label.white {
   background-color: white;
   color: black;
 }
-
 /* Когда выбрана черная кнопка */
 input[type="radio"]#black:checked + label.black {
   background-color: white;
   color: black;
 }
-
 /* Когда выбрана черная кнопка - Белая становится черной */
 input[type="radio"]#black:checked ~ label.white {
   background-color: transparent; /* Белая кнопка становится черной */
@@ -77,4 +155,14 @@ input[type="radio"]#black:checked ~ label.white {
 input[type="radio"]#white:checked ~ label.black {
   background-color: transparent;
   color: white;
+}
+
+/* sectionBattery */
+.sectionBattery {
+}
+.h2__section {
+  font-size: 45px;
+  font-weight: 500;
+  line-height: 110%;
+  color: rgb(241, 241, 241);
 }
