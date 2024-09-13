@@ -70,7 +70,7 @@
     left: 0px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .orangeLogo {
     width: 49.08px;
     height: 28.7;
