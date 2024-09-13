@@ -1,0 +1,72 @@
+@media screen and (max-width: 1400px) {
+  .navigation__flex,
+  .h1__header,
+  .h2__header,
+  .toggle-switch,
+  .h2__section {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .h1__header {
+    font-size: 40px;
+    max-width: 530px;
+    line-height: 120%;
+    margin-bottom: 19px;
+  }
+  .h2__header {
+    font-size: 20px;
+    line-height: 120%;
+    width: 350px;
+  }
+  .h2-two {
+    width: 250px;
+    margin-bottom: 49px;
+  }
+  .h2__section {
+    font-size: 30px;
+    max-width: 560px;
+  }
+  .logo {
+    display: none;
+  }
+  .orangeLogo {
+    display: block;
+    margin-bottom: 9px;
+  }
+  .burger-menu {
+    display: block;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 65px;
+    width: 54px;
+    height: 54px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 6;
+  }
+
+  .buy-button,
+  .ul__flex {
+    display: none;
+  }
+  .imgBike {
+    width: 1243px;
+    height: 849px;
+    top: -200px;
+    left: 2.5%;
+  }
+  .navigation__flex {
+    margin-bottom: 106px;
+  }
+  .header {
+    height: 639px;
+  }
+  .ellipseButton {
+    left: 0px;
+  }
+}
